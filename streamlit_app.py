@@ -51,20 +51,20 @@ st.sidebar.markdown('''
 
 components.iframe("https://docs.streamlit.io/library/api-reference/write-magic/st.write")
 
-st.sidebar.header('Deploy')
-st.sidebar.markdown('You can quickly deploy Streamlit apps using [Streamlit Community Cloud](https://streamlit.io/cloud) in just a few clicks.')
+# st.sidebar.header('Deploy')
+# st.sidebar.markdown('You can quickly deploy Streamlit apps using [Streamlit Community Cloud](https://streamlit.io/cloud) in just a few clicks.')
 
-# Display content
-for i in days_list:
-    if selected_day == i:
-        st.markdown(f'# 🗓️ {i}')
-        j = i.replace(' ', '')
-        with open(f'content/{j}.md', 'r') as f:
-            st.markdown(f.read())
-        if os.path.isfile(f'content/figures/{j}.csv') == True:
-            st.markdown('---')
-            st.markdown('### Figures')
-            df = pd.read_csv(f'content/figures/{j}.csv', engine='python')
-            for i in range(len(df)):
-                st.image(f'content/images/{df.img[i]}')
-                st.info(f'{df.figure[i]}: {df.caption[i]}')
+# # Display content
+# for i in days_list:
+#     if selected_day == i:
+#         st.markdown(f'# 🗓️ {i}')
+#         j = i.replace(' ', '')
+#         with open(f'content/{j}.md', 'r') as f:
+#             st.markdown(f.read())
+#         if os.path.isfile(f'content/figures/{j}.csv') == True:
+#             st.markdown('---')
+#             st.markdown('### Figures')
+#             df = pd.read_csv(f'content/figures/{j}.csv', engine='python')
+#             for i in range(len(df)):
+#                 st.image(f'content/images/{df.img[i]}')
+#                 st.info(f'{df.figure[i]}: {df.caption[i]}')
