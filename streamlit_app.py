@@ -50,7 +50,7 @@ import glob
 # ''')
 
 #components.iframe("https://docs.streamlit.io/library/api-reference/write-magic/st.write")
-components.iframe("https://30days.streamlit.app/)
+components.iframe("https://30days.streamlit.app/")
 
 # st.sidebar.header('Deploy')
 # st.sidebar.markdown('You can quickly deploy Streamlit apps using [Streamlit Community Cloud](https://streamlit.io/cloud) in just a few clicks.')
