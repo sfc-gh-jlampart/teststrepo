@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as components
 import os
 import numpy as np
 import pandas as pd
@@ -47,6 +48,8 @@ st.sidebar.markdown('''
 - [Book](https://www.amazon.com/dp/180056550X) (Getting Started with Streamlit for Data Science)
 - [Blog](https://blog.streamlit.io/how-to-master-streamlit-for-data-science/) (How to master Streamlit for data science)
 ''')
+
+components.iframe("https://docs.streamlit.io/library/api-reference/write-magic/st.write")
 
 st.sidebar.header('Deploy')
 st.sidebar.markdown('You can quickly deploy Streamlit apps using [Streamlit Community Cloud](https://streamlit.io/cloud) in just a few clicks.')
