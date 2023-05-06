@@ -49,8 +49,8 @@ st.sidebar.markdown('''
 - [Blog](https://blog.streamlit.io/how-to-master-streamlit-for-data-science/) (How to master Streamlit for data science)
 ''')
 
-components.iframe("https://docs.streamlit.io/library/api-reference/write-magic/st.write")
-#components.iframe("https://30days.streamlit.app/")
+#components.iframe("https://docs.streamlit.io/library/api-reference/write-magic/st.write")
+components.iframe("https://30days.streamlit.app/?embed=true")
 #components.iframe("https://starter-kit.streamlit.app/")
 
 # st.sidebar.header('Deploy')
